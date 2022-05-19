@@ -23,7 +23,7 @@ def crop():
             right = (width + new_width) / 2
             bottom = (height + new_height) / 2
 
-            new_image = image.crop((left, top, right, bottom))
+            new_image = image.crop((left, top, right, bottom)).conver("L")
             new_image.save(new_path + f + '.jpg', "JPEG", quality=100)
 
 
